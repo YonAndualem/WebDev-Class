@@ -13,51 +13,130 @@
 </head>
 
 <body>
-    <div class="outer">
-        <div class="header">
-            <div class="running">
-                <div class="titles">
-                    <h1>HiLCoE</h1>
-                    <h3>School of Computer Science & Technology</h3>
-                </div>
-                <div class="secondtitle">
-                    Service Request Card
+    <div class="card-container">
+        <div class="card" id="card">
+            <div class="card-side front">
+                <div class="outer">
+                    <div class="header">
+                        <div class="running">
+                            <div class="titles">
+                                <h1>HiLCoE</h1>
+                                <h3>School of Computer Science & Technology</h3>
+                            </div>
+                            <div class="secondtitle">
+                                Service Request Card
+                            </div>
+                        </div>
+                        <div id="imageBox">
+                            <input type="file" id="imageInput" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <form id="studentForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name Here">
+                            <br>
+
+                            <div class="group">
+                                <label for="class">Class:</label>
+                                <input type="text" id="class" name="class" value="DRBSE2202" readonly>
+                                <label for="src">SRC:</label>
+                                <input type="text" id="src" name="src" value="AB1234" readonly>
+                            </div>
+                            <label for="tel">Tel./Mob:</label>
+                            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required
+                                placeholder="+251-1234567890">
+                        </form>
+                    </div>
+                    <div class="horizontal">
+                        <hr class="full">
+                        <hr class="first">
+                        <hr class="second">
+                        <hr class="third">
+                    </div>
+                    <div class="footer">
+                        <p>Tel. +251-11-156-4888, +251-11-156-4889</p>
+                        <p>Email: info@hilcoeschool.net www.hilcoeschool.com</p>
+                    </div>
                 </div>
             </div>
-            <div id="imageBox">
-                <input type="file" id="imageInput" accept="image/*">
+            <div class="card-side back">
+                <div class="outer">
+                    <div class="card-back">
+                        <table>
+                            <tr>
+                                <th>Term</th>
+                                <th>Course(s)</th>
+                                <th>Remark</th>
+                            </tr>
+                            <tr>
+                                <td>AUT2022</td>
+                                <td>CS100, CS101, CS102, CS103</td>
+                                <td>Sept 1, 2022</td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="blank-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="middle">
-            <form id="studentForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name Here">
-                <br>
+        <button id="flipButton">Flip Card</button>
 
-                <div class="group">
-                    <label for="class">Class:</label>
-                    <input type="text" id="class" name="class" value="DRBSE2202" readonly>
-                    <label for="src">SRC:</label>
-                    <input type="text" id="src" name="src" value="AB1234" readonly>
-                </div>
-                <label for="tel">Tel./Mob:</label>
-                <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required placeholder="+251-1234567890">
-            </form>
-        </div>
-        <div class="horizontal">
-            <hr class="full">
-            <hr class="first">
-            <hr class="second">
-            <hr class="third">
-        </div>
-        <div class="footer">
-            <p>Tel. +251-11-156-4888, +251-11-156-4889</p>
-            <p>Email: info@hilcoeschool.net www.hilcoeschool.com</p>
-        </div>
-    </div>
-
-    <script src="./JS/script.js">
-    </script>
+        <script src="./JS/script.js"></script>
 </body>
 
 </html>
